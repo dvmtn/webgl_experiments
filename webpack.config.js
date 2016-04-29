@@ -6,5 +6,13 @@ module.exports = {
   },
   resolve:{
     extensions: ['', '.js']
+  },
+  module: {
+    loaders: [
+      {
+        test: /\.glsl$/,
+        loader: 'webpack-glsl'
+      }
+    ]
   }
 };
